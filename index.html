@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+
+    <main class="container">
+
+        <img src="/img/bag.png" alt="Bolsa de compras">
+
+        <form class="form-item">
+
+            <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar.">
+            <button class="salvar-item" id="salvar-item">Salvar item</button>
+
+        </form>
+
+        <ul class="container-lista" id="lista-de-compras">
+
+          <h2>Lista de compras</h2>
+
+          <li type="none">
+
+            <div class="linha-item">
+
+              <div class="container-nome-item" >
+                <div class="checkbox-container">
+                  
+                  <label for="checkbox-1">
+                    <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                    <div class="checkbox-customizado checked"></div>
+                  </label>
+                
+                </div>
+
+                <div class="container-texto">
+
+                  <p class="texto-item" id="item-titulo">Ração de gato</p>
+                
+                </div>
+
+              </div>
+
+                <div class="delete-edit-list">
+
+                  <button class="item-lista-button">
+                  <img src="/img/delete.svg" alt="imgdelete">
+                  </button>
+                
+                  <button class="item-lista-button">
+                  <img src="/img/edit.svg" alt="imgedit">
+                  </button>
+
+                </div>
+              
+            </div>
+
+            <p class="texto-data" id="texto-data">Segunda-Feira (31/01/2022) ás 8:30</p>
+            
+          </li>
+
+        </ul>
+
+        <ul class="lista-comprados" id="lista-comprados">
+
+          <h2>Comprados</h2>
+
+        </ul>
+
+    </main> 
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

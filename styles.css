@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #F55B64;
+    --cor-secundaria: #c2373f;
+    --neutro: #F9F9F9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+    --degrade-azul: linear-gradient(180deg, #000000 0%, #26327F 100%);
+}
+
+body {
+    background: var(--degrade-azul) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-top: 64px;
+    background-color: var(--neutro);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+    align-items: center;
+    padding: 56px;
+    border-radius: 10px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--fonte-texto);
+}
+
+.form-item input {
+    padding: 5px;
+    width: 308px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0.5px solid grey;
+    font-family: var(--fonte-texto);
+}
+
+.form-item button {
+    width: 120px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    font-family: var(--fonte-texto);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 20px;
+}
+
+#lista-de-compras{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--fonte-texto);
+}
+
+#lista-de-compras h2{
+    text-align: left;
+    border-bottom: 2px dotted var(--cor-primaria);
+    padding-bottom: 10px;
+}
+
+.texto-item{
+    font-size: 17px;
+}
+
+.texto-data{
+    font-size: 12px;
+}
+
+.delete-edit-list{
+    display: flex;
+}
+
+.item-lista-button{
+    background-color: var(--neutro);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 25px;
+}
+
+.linha-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-input{
+    display: none;
+}
+
+.checkbox-customizado{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--preto);
+    background-color: var(--neutro);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.checked{
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checked::after{
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg);
+}
+
+li{
+    list-style-type: none;
+}
+
+.container-nome-item{
+    display: flex;
+}
+
+.lista-comprados{
+    font-family: var(--fonte-texto);
+    text-align: left;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-comprados h2{
+    border-bottom: 2px dotted var(--cor-primaria);
+    padding-bottom: 10px;
+}
