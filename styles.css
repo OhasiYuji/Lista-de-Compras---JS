@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 400px;
+    width: 350px;
     align-items: center;
     padding: 56px;
     border-radius: 10px;
